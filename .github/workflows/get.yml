@@ -4,6 +4,7 @@ on:
   workflow_dispatch
 jobs:
   EGet_the-file:
+    uses: aneeshk83/aneesh-test001/.github/workflows/sample.yml
     runs-on: ubuntu-latest
     steps:
       - name: Get the file
