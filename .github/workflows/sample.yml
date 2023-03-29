@@ -1,0 +1,13 @@
+name: GitHub Actions Test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hi aneesh" >> ./aneesh.txt
+      - name: Store the file
+        uses: actions/upload-artifact@v3
+        with:
+          name: aneesh-artifact-${{ github.sha }}
+          path: ./aneesh.txt
