@@ -9,7 +9,7 @@ jobs:
       - name: Get the file
         uses: actions/download-artifact@v3
         with:
-          name: coveragemicroservicea-${{ github.sha }}
+          name: aneesh-artifact-${{ github.sha }}
       - run: cat ./aneesh.txt   
         
         
