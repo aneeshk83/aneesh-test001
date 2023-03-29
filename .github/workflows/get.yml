@@ -9,9 +9,10 @@ jobs:
       - name: Get the file
         uses: actions/download-artifact@v3
         with:
-          name: aneesh-artifact-${{ github.sha }}
-      - run: cat ./aneesh.txt   
-        
+          name: aneesh-artifact-*
+      - run: |
+          cat ./aneesh.txt   
+          ls -l
         
   
   
