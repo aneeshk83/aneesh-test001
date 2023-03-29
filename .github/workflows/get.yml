@@ -9,7 +9,7 @@ jobs:
       - name: Get the file
         uses: actions/download-artifact@v3
         with:
-          name: aneesh-artifact-*
+          name: aneesh-artifact-125051a8e5c36de50df4b3d67bb14f3fb1f4d24b
       - run: |
           cat ./aneesh.txt   
           ls -l
