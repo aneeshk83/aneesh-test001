@@ -1,0 +1,17 @@
+name: Get_the_file
+
+on:
+  workflow_dispatch
+jobs:
+  EGet_the-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the file
+        uses: actions/download-artifact@v3
+        with:
+          name: coveragemicroservicea-${{ github.sha }}
+      - run: cat ./aneesh.txt   
+        
+        
+  
+  
